@@ -33,7 +33,7 @@ const Navbar = () => {
                
                 
                 <HiOutlineUserCircle  className='theme_icon1'/> 
-                <p className='dropdown'>Admirra John
+                <p className='dropdown'> &nbsp;&nbsp;&nbsp;Admirra 
                 <RiArrowDropDownLine className='theme_icon1'/>
                  </p>
                 

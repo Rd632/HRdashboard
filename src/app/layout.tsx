@@ -42,10 +42,11 @@ export default function RootLayout({
 
           {/* HAMBURGER ICON FOR SMALL SCREENS */}
           <div className="md:hidden fixed top-4 left-4 z-50">
-            <button onClick={() => setMenuOpen(true)}>
+            <button onClick={() => setMenuOpen(true)} className="p-2 bg-white shadow-md rounded-full">
               <FiMenu size={28} className="text-gray-700" />
             </button>
           </div>
+
 
           {/* SLIDING MENU OVERLAY (Only visible when menu is open) */}
           {menuOpen && (
@@ -58,7 +59,7 @@ export default function RootLayout({
           )}
 
           {/* RIGHT SECTION */}
-          <div className="w-full md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#F7F8FA] overflow-scroll flex flex-col">
+          <div className="w-full md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#F7F8FA] overflow-scroll flex flex-col overflow-x-hidden">
             <Navbar />
             <Dashboard />
             {children}
